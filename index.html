@@ -13,43 +13,35 @@
       <link href="css/responsive.css" rel="stylesheet">
    </head>
    <body>
-      <div class="fixed-top">
-         <div class="container">
-            <nav class="navbar navbar-expand-md bg-white rounded-4 px-4 border border-primary border-opacity-25 mt-2 mt-md-4">
-               <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
-               <a href="#" class="navbar-toggler">
+      <header class="border-bottom">
+         <div class="logo">
+            <img src="images/logo.svg">
+         </div>
+         <input type="checkbox" id="nav_check" hidden>
+         <nav>
+            <ul>
+               <li>
+                  <a href="#">HOME</a>
+               </li>
+               <li>
+                  <a href="#about-scroll">ABOUT</a>
+               </li>
+               <li>
+                  <a href="#product-scroll">OUR PRODUCTS</a>
+               </li>
+               <li>
+                  <a href="#contact-scroll">CONTACT US</a>
+               </li>
+            </ul>
+         </nav>
+         <label for="nav_check" class="hamburger">
+            <a href="#" class="top-btn rounded-2">
                <img src="images/icon-top.svg">
                </a>
-               <div class="collapse navbar-collapse" id="navbarSupportedConten">
-                  <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#about-scroll">ABOUT</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#product-scroll">OUR PRODUCTS</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#scale-scroll">SCALING</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#magic-scroll">MAGIC ELEMENTS</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#global-scroll">GLOBAL PRESENCE</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-scroll">CONTACT US</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-      </div>
+         </label>
+      </header>
       <section id="main-banner" class="position-relative">
-         <div class="container pt-5">
+         <div class="container">
             <div class="row justify-content-center">
                <div class="col-10 col-md-10 text-center">
                   <h5 class="mb-3 mb-md-5">FINANCIAL SERVICES FIRM</h5>
@@ -136,9 +128,9 @@
             <div class="row g-4 align-items-center text-center text-white">
                <div class="col-md-4">
                   <div class="number-block border border-white border-opacity-50 px-3 py-4 rounded-3">
-                     <h2 class="mb-0 display-5 fw-bolder">400</h2>
-                     <h5 class="mb-1">PETABYTES</h5>
-                     <p class="mb-0 fw-light">OF USABLE STORAGE</p>
+                     <h2 class="mb-0 display-5 fw-bolder">10K</h2>
+                     <h5 class="mb-1">TERABYTES</h5>
+                     <p class="mb-0 fw-light">OF STORAGE</p>
                   </div>
                </div>
                <div class="col-md-4">
@@ -147,30 +139,30 @@
                </div>
                <div class="col-md-4">
                   <div class="number-block border border-white border-opacity-50 px-3 py-4 rounded-3">
-                     <h2 class="mb-0 display-5 fw-bolder">8.5</h2>
-                     <h5 class="mb-1">PETABYTES</h5>
-                     <p class="mb-0 fw-light">OF USABLE RAM</p>
+                     <h2 class="mb-0 display-5 fw-bolder">10,000</h2>
+                     <h5 class="mb-1">CRORE</h5>
+                     <p class="mb-0 fw-light">DAILY VOLUME</p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="number-block border border-white border-opacity-50 px-3 py-4 rounded-3">
-                     <h2 class="mb-0 display-5 fw-bolder">15</h2>
-                     <h5 class="mb-1">MEGAWATTS</h5>
-                     <p class="mb-0 fw-light">OF RENEWABLE SOURCED POWER</p>
+                     <h2 class="mb-0 display-5 fw-bolder">12+</h2>
+                     <h5 class="mb-1">ACTIVE</h5>
+                     <p class="mb-0 fw-light">EXCHANGES</p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="number-block border border-white border-opacity-50 px-3 py-4 rounded-3">
-                     <h2 class="mb-0 display-5 fw-bolder">25000</h2>
-                     <h5 class="mb-1">TOP-END GPUs</h5>
-                     <p class="mb-0 fw-light">IN OUR RESEARCH CLUSTER</p>
+                     <h2 class="mb-0 display-5 fw-bolder">10+</h2>
+                     <h5 class="mb-1">DECADES</h5>
+                     <p class="mb-0 fw-light">OF EXPERIENCE</p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="number-block border border-white border-opacity-50 px-3 py-4 rounded-3">
-                     <h2 class="mb-0 display-5 fw-bolder">250</h2>
-                     <h5 class="mb-1">BILLION USD</h5>
-                     <p class="mb-0 fw-light">DAILY TRADING VOLUME</p>
+                     <h2 class="mb-0 display-5 fw-bolder">25-30</h2>
+                     <h5 class="mb-1">RESEARCHERS</h5>
+                     <p class="mb-0 fw-light">IN THE TEAM</p>
                   </div>
                </div>
             </div>
@@ -237,6 +229,44 @@
                </div>
             </div>
          </div>
+         <div id="team-scroll" class="position-absolute" style="bottom: 100px;"></div>
+      </section>
+      <section id="team" class="position-relative">
+         <div class="container">
+            <h2 class="text-primary display-6 fw-bolder mb-5 pb-md-3 text-center">Our Team</h2>
+            <div class="row g-4 align-items-center justify-content-center">
+               <div class="col-md-6">
+                  <div class="team-block bg-white border rounded-4 px-4 py-4 py-md-5">
+                     <div class="row align-items-center mb-3 mb-md-4 g-3">
+                        <div class="col-5 col-md-4">
+                           <img src="images/team-ajay.jpg" class="img-fluid rounded-circle border">
+                        </div>
+                        <div class="col-7 col-md-auto">
+                           <h4>Ajay Kumar Vijay</h4>
+                           <h6 class="text-primary mb-3">Co-Founder/CEO</h6>
+                           <a href="https://in.linkedin.com/in/ajay-vijay-6b7b8650" target="_blank"><img src="images/team-ico-in.svg" width="24"></a>
+                        </div>
+                     </div>
+                     <small>Ajay has over 16 years of experience in quantitative trading, with a strong track record across asset classes, trading styles, and global markets. He has held senior Portfolio Manager roles at Edelweiss Finance and QE Securities, where he led the development of data-driven investment strategies. Currently, he heads 26 Miles Capital, bringing a forward-thinking approach to quant trading. Ajay is an alumnus of NIT Jaipur and IIM Calcutta, with a background that blends deep analytical expertise and strategic insight.</small>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="team-block bg-white border rounded-4 px-4 py-4 py-md-5">
+                     <div class="row align-items-center mb-3 mb-md-4 g-3">
+                        <div class="col-5 col-md-4">
+                           <img src="images/team-sumanshu.jpg" class="img-fluid rounded-circle border">
+                        </div>
+                        <div class="col-7 col-md-auto">
+                           <h4>Sumanshu Dwivedi</h4>
+                           <h6 class="text-primary mb-3">Co-Founder/CTO</h6>
+                           <a href="https://in.linkedin.com/in/sumanshu-dwivedi-a4745038" target="_blank"><img src="images/team-ico-in.svg" width="24"></a>
+                        </div>
+                     </div>
+                     <small>Sumanshu has 16+ years of experience architecting and building high-performance, low-latency systems for leading global financial institutions ( (D.E. Shaw, Edelweiss, Tower Research), including those with significant global market presence, and scaling distributed platforms at Zomato. Deep expertise in data systems and AI, including spearheading the development of Zomato's core real-time data processing platform and location intelligence systems. He is an alumnus of IIT Delhi.</small>
+                  </div>
+               </div>
+            </div>
+         </div>
          <div id="contact-scroll" class="position-absolute" style="bottom: 100px;"></div>
       </section>
       <section id="contact" class="position-relative">
@@ -244,10 +274,10 @@
             <div class="row g-4">
                <div class="col-md-6">
                   <div class="contact-block bg-white rounded-4 p-5">
-                     <h2 class="text-primary display-6 fw-bolder mb-5">Contact Details</h2>
+                     <h2 class="text-primary fs-2 fw-bolder mb-4">Contact Details</h2>
                      <div class="row align-items-center">
                         <div class="col-8 col-md-6 mb-4 mb-md-0">
-                           <img src="images/logo.svg" class="img-fluid">
+                           <img src="images/logo-footer.svg" class="img-fluid">
                         </div>
                         <div class="col-md-6">
                            <h6 class="fw-bold">Address:</h6>
@@ -260,7 +290,7 @@
                </div>
                <div class="col-md-6">
                   <div class="contact-block bg-white rounded-4 p-5">
-                     <h2 class="text-primary display-6 fw-bolder mb-5">Write To Us</h2>
+                     <h2 class="text-primary fs-2 fw-bolder mb-4">Write To Us</h2>
                      <form class="row">
                         <div class="col-md-9 mb-3 mb-md-0">
                            <input type="email" class="form-control border border-primary border-opacity-25 p-3 mb-2" id="email" placeholder="Email Address">
@@ -282,6 +312,7 @@
             <small class="text-white opacity-75">&copy; Copyright 2025 - All Rights Reserved</small>
          </div>
       </footer>
+      <script src="js/navbar.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
    </body>
 </html>

@@ -1,14 +1,22 @@
 @media only screen and (max-width: 600px) {
+	header {
+        padding: 0 20px;
+    }
+
+	.hamburger {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+	
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+
 	#main-banner h1 {
 		font-size: 2.3rem;
-	}
-
-	.navbar-brand img {
-		height: 54px;
-	}
-
-	.navbar-collapse {
-		margin-top: 20px;
 	}
 
 	#about {
@@ -49,6 +57,19 @@
 	#global-presence {
 		padding-top: 80px;
 		padding-bottom: 80px;
+	}
+
+	#team {
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+	}
+
+	.team-block h4 {
+		font-size: 1.15rem;
+	}
+	.team-block h6 {
+		font-size: 0.9rem;
 	}
 
 	#contact {

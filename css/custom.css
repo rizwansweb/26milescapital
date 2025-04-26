@@ -26,26 +26,67 @@ body {
 	--bs-btn-disabled-border-color: #104CBA;
 }
 
-.navbar {
-	--bs-navbar-color: rgba(var(--bs-link-color-rgb), 1);
-	--bs-navbar-hover-color: rgba(var(--bs-link-hover-color-rgb), 1);
-	--bs-navbar-nav-link-padding-x: 1rem;
-	--bs-navbar-toggler-padding-y: 0.5rem;
-	--bs-navbar-toggler-border-color: rgba(var(--bs-primary-rgb), 1);
-	--bs-navbar-toggler-focus-width: 0rem;
+header {
+    background: #fff;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+     position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
 }
 
-.navbar-toggler:focus {
-    box-shadow: 0 0 10px rgba(var(--bs-primary-rgb), 0.5);
-	
+header.hide {
+  transform: translateY(-100%);
 }
 
-.navbar-nav {
-	--bs-nav-link-font-weight: 500;
+header .logo {
+	height: 40px;
 }
 
-.navbar-brand img {
-	height: 72px;
+header nav ul {
+    display: flex;
+	list-style-type: none;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: #000;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+	font-size: 0.9rem;
+	font-weight: 500;
+    text-transform: uppercase;
+	text-decoration: none;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #104CBA;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger .top-btn {
+    border: 1px solid #104CBA;
+    padding: 6px;
+}
+
+.hamburger .top-btn:focus {
+    box-shadow: 0 0 6px rgba(var(--bs-primary-rgb), 0.5);
 }
 
 .video-background {
@@ -181,6 +222,11 @@ body {
 	padding-top: 120px;
 	padding-bottom: 120px;
 	background-color: #E7EEF8;
+}
+
+#team {
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 #contact {
