@@ -44,6 +44,18 @@
 		padding-bottom: 180px;
 	}
 
+	#numbers h2 {
+		font-size: 1.8rem;
+	}
+
+	#numbers h5 {
+		font-size: 1rem;
+	}
+
+	#numbers p {
+		font-size: 0.8rem;
+	}
+
 	.how-banner {
 		padding-top: 40px;
 		padding-bottom: 40px;
